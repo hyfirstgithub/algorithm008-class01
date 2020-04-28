@@ -4,7 +4,7 @@
 1|简单|[两数之和](https://leetcode-cn.com/problems/two-sum/)|20200427-18:23| | | | |
 15|中等|[三数之和](https://leetcode-cn.com/problems/3sum/)|20200427-18:40| 20200428-09:42| | | |
 面试题17.09|中等|[第k个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)|20200428-13:56|20200428-14:13||||
-415|简单|[字符串相加](https://leetcode-cn.com/problems/add-strings/)| 20200428-17:21| | | | |
+415|简单|[字符串相加](https://leetcode-cn.com/problems/add-strings/)| 20200428-17:21|20200428-17:33 | | | |
 
 
 
