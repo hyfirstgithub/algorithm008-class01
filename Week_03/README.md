@@ -10,6 +10,7 @@
 面试题05|简单|[替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)|20200429-16:19|20200429-16:22||||
 面试题06|简单|[从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)|20200429-16:33|20200429-16:38||||
 面试题68-II|简单|[二叉树的最近公共祖先](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)|20200429-16:30|20200429-17:05|||| 
+104|简单|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|20200430-17:59|20200430-18:30||||
 
 # 作业
 
