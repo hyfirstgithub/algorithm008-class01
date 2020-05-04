@@ -11,10 +11,15 @@
 面试题06|简单|[从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)|20200429-16:33|20200429-16:38||||
 面试题68-II|简单|[二叉树的最近公共祖先](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)|20200429-16:30|20200429-17:05|||| 
 104|简单|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|20200430-17:59|20200430-18:30||||
+242|简单|[有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)|20200503-20:52| 20200503-21:13||||
 
 # 作业
 
 |序号|难度|题目|一刷|二刷|三刷|四刷|五刷|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-70|简单|[爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)| | | | | |
-22|中等|[括号生成](https://leetcode-cn.com/problems/generate-parentheses/)| | | | | |
+70|简单|[爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)|20200502-20:57 | 20200502-21:06| | | |
+22|中等|[括号生成](https://leetcode-cn.com/problems/generate-parentheses/)|20200503-10:51| 20200503-11:45 | | | |
+226| 简单| [反转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/description/)|20200504-14:53| 20200504-14:56||||
+98| 中等 | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)|20200504-15:35| 20200504-15:53||||
+111|简单| [二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)|20200504-16:17|20200504-16:35||||
+297|困难| [二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)|20200504-19:30|20200504-19:49||||
