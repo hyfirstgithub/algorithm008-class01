@@ -93,4 +93,54 @@ private int[][] matrix22_mul(int[][] x, int[][] y) {
 其实现的要点是使用了一个哨兵v记录平方之后的积和移位运算。v=v*v，平方积之后对积再平方，这样计算两次就等于做了x的4次方的运算。
 2的k次方=n，即k=logn。 原来做n次相乘，现在只需要k次即可。
 
+# 递归
+
+1. 递归代码模板
+```java
+public void recution(int level, Object params1, params2,...) {
+    // recursion terminator
+    if ( level > MAX_LEVEL){
+        process_result;
+        return;
+    }
+    
+    //process logic in current level
+    process(level, data...);
+    
+    // drill down
+    self.recursion(level+1,p1,...);
+    
+    // reverse the current level status if needed
+
+}
+```
+
+# 分治
+
+1. 分治代码模板
+```java
+void divide_conquer(problem, param1, param2, ...){
+    // recursion teminator
+    if( problem == null){
+        print_result;
+        return;
+    }
+    
+    // prepare data
+    data = prepare_data(problem);
+    subProblems = split_problem(problem, data)
+    
+    // conquer subproblems
+    subresult1 = self.divide_conquer(subProblems[0], p1,....);
+    subresult1 = self.divide_conquer(subProblems[1], p1,....);
+    subresult1 = self.divide_conquer(subProblems[2], p1,....);
+    ...
+    
+    // process and generate the final result
+    result = process_result(subresult1, subresult2, subresult3, ....);
+    
+    // revert the current level states 
+}
+```
+
 

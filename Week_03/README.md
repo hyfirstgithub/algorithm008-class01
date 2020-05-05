@@ -23,3 +23,5 @@
 98| 中等 | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)|20200504-15:35| 20200504-15:53||||
 111|简单| [二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)|20200504-16:17|20200504-16:35||||
 297|困难| [二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)|20200504-19:30|20200504-19:49||||
+105|中等| [从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|20200505-14:28|20200505-14:30||||
+77| 中等| [组合](https://leetcode-cn.com/problems/combinations/)|20200505-20:30|20200505-21:09||||
