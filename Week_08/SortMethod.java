@@ -9,7 +9,9 @@ public class SortMethod {
         int[] nums = {2,1,3,5,4,10,6};
 //        method.bubbleSort(nums);
 //        method.selectionSort(nums);
-        method.insertionSort(nums);
+//        method.insertionSort(nums);
+//        method.shellSort(nums);
+        method.mergeSort(nums);
         System.out.println(Arrays.toString(nums));
 
     }
@@ -73,5 +75,72 @@ public class SortMethod {
         }
     }
 
+    /**
+     * 希尔排序
+     * @param nums
+     */
+    public void shellSort(int[] nums) {
+        if (nums.length == 1) return;
+        for(int i = (nums.length - 1) >> 1 ; i > 0 ; i--) {
+            for(int j = i; j < nums.length; j++) {
+                int h = j;
+                int current = nums[j];
+                for( ; h - i>=0 && h < nums.length; h -= i) {
+                    if (nums[h - i] > current) {
+                        nums[h] = nums[h - i];
+                    } else {
+                        break;
+                    }
+                }
+                nums[h] = current;
+            }
+        }
+    }
+
+    /**
+     *  归并排序
+     * @param nums
+     */
+    public void mergeSort(int[] nums) {
+        if (nums.length == 1) return;
+        mergeSort(nums, 0 ,nums.length - 1);
+    }
+
+    private void mergeSort(int[] nums, int left, int right) {
+        if (left >= right) return;
+        int mid = (left + right) >> 1;
+        mergeSort(nums, left, mid);
+        mergeSort(nums, mid+1, right);
+
+        int[] tmp = new int[right - left + 1];
+        int i = left, j = mid + 1;
+        int pos =0;
+        for( ;i <= mid && j <= right; pos++) {
+            if (nums[i] <= nums[j]) {
+                tmp[pos] = nums[i];
+                i++;
+            } else {
+                tmp[pos] = nums[j];
+                j++;
+            }
+        }
+        if (i > mid) {
+            while (j <= right){
+                tmp[pos] = nums[j];
+                j++;
+                pos++;
+            }
+        } else {
+            while (i <= mid) {
+                tmp[pos] = nums[i];
+                pos++;
+                i++;
+            }
+        }
+
+        for(int n = 0 ; n < tmp.length; n++) {
+            nums[left+n] = tmp[n];
+        }
+    }
 
 }
