@@ -11,7 +11,8 @@ public class SortMethod {
 //        method.selectionSort(nums);
 //        method.insertionSort(nums);
 //        method.shellSort(nums);
-        method.mergeSort(nums);
+//        method.mergeSort(nums);
+//        method.heapif(nums);
         System.out.println(Arrays.toString(nums));
 
     }
@@ -140,6 +141,110 @@ public class SortMethod {
 
         for(int n = 0 ; n < tmp.length; n++) {
             nums[left+n] = tmp[n];
+        }
+    }
+
+    public void quickSort(int[] nums) {
+        quickSor(nums, 0 , nums.length-1);
+    }
+
+    private void quickSor(int[] arr, int left, int right) {
+        if (left >= right) return;
+
+        int povt = left;
+        int index = left + 1;
+        for (int i = left; i <= right; i++){
+            if(arr[i] < arr[povt]) {
+                swap(arr, i, index);
+                index++;
+            }
+        }
+        index--;
+        swap(arr, povt, index);
+        quickSort(arr, left, index - 1);
+        quickSort(arr, index + 1, right);
+    }
+
+    private void swap(int[] arr, int pos1, int pos2) {
+        int tmp = arr[pos1];
+        arr[pos1] = arr[pos2];
+        arr[pos2] = tmp;
+    }
+
+    /**
+     * 堆排序
+     * @param nums
+     */
+    public void heapSort(int[] nums) {
+        for(int i = (nums.length >> 1) -1 ; i >= 0; i--) {
+            heapif(nums, nums.length, i);
+        }
+
+        for(int i = nums.length - 1; i >= 0; i--) {
+            int tmp = nums[i];
+            nums[i] = nums[0];
+            nums[0] = tmp;
+            heapif(nums, i, 0);
+        }
+
+    }
+
+    private void heapif(int[] nums, int length , int i) {
+        int left = (i << 1) + 1, right = (i << 1) + 2;
+        int largestPos = i;
+        if (left < length && nums[left] > nums[largestPos] ) {
+            largestPos = left;
+        }
+        if (right < length && nums[right] > nums[largestPos]) {
+            largestPos = right;
+        }
+        if (largestPos != i) {
+            int tmp = nums[i];
+            nums[i] = nums[largestPos];
+            nums[largestPos] = tmp;
+            heapif(nums, length, largestPos);
+        }
+    }
+
+    /**
+     * 计数排序
+     */
+    public void countingSort(int[] nums, int maxValue) {
+        int[] countMark = new int[maxValue + 1];
+        for(int i: nums) {
+            countMark[i]++;
+        }
+        int pos = 0;
+        for(int i = 0; i < countMark.length; i++) {
+            while (countMark[i] > 0) {
+                nums[pos] = i;
+                countMark[i]--;
+                pos++;
+            }
+        }
+    }
+
+    /**
+     *  桶排序
+     * @param nums
+     */
+    public void bucketSort(int[] nums) {
+        int min = nums[0];
+        int max= nums[0];
+        for(int i =1; i < nums.length ; i++) {
+            if (nums[i] > max) {
+                max = nums[i];
+            }
+            if (nums[i] < min) {
+                min = min[i];
+            }
+        }
+
+        int bucketSize = max - min  + 1;
+        int[][] = new int[bucketSize][nums.length];
+
+        for(int i = 0; i < nums.length ; i++) {
+
         }
     }
 
